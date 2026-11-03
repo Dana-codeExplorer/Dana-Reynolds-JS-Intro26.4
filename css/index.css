@@ -1,0 +1,184 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  background-image: url("../images/sea.webp") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ body{
+  background-color: rgba(127, 255, 227, 0.103);
+  padding: 1rem;
+} 
+
+.image-container {
+  display: flex;
+  overflow: hidden;
+  align-items:center;
+  justify-content: center;
+}
+.reveal-image {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.image-container:hover .reveal-image {
+  opacity: 1;
+}
+img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border:3px solid rgb(15, 15, 83);
+
+}
+h1{ 
+  font-family:"Fredericka the Great", arial;
+  text-align: center;
+  color:rgb(15, 15, 83);
+  font-size: 2.5rem;
+}
+.nav{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 2rem;
+
+}
+.navbar-link{ 
+  display:flex;
+  list-style:none;
+  gap:1.5rem;
+  padding:0;
+  margin:0;
+}
+.nav-item .delicious-handrawn-regular {
+  text-decoration: none;
+  color: rgb(15, 15, 83);
+  font-size: 1.2rem;
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 400;
+  font-style: normal;
+  transition:color 0.3s ease-in-out;
+}
+.nav-item .delicious-handrawn-regular:hover{
+  color:rgb(160, 79, 49);
+}
+
+main{
+  background-color:rgba(127, 255, 227, 0.548);
+   backdrop-filter:blur 2px;
+   border-radius:  10px;
+   padding: 3rem;
+  color:rgb(15, 15, 83);
+}
+
+ 
+section{
+  padding:.5rem;
+  margin-bottom: .5rem;
+}
+
+
+h2 {
+  margin-bottom: .5em;
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+  font-weight: 900;
+  margin-bottom:.5em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* Experience section styles */
+#Experience{
+  padding-bottom: 1rem;
+  
+}
+#Experience h2{
+  text-align: center;
+  color: rgb(160, 79, 49);
+  font-weight: 700;
+  font-size: 2rem;
+}
+#Experience p{
+  text-align: center;
+  font-style:italic;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.e-links li {
+  display:grid;
+  grid-template: repeat(3, 1fr);
+  margin-bottom: 1rem;
+  
+  border:3px solid rgb(15, 15, 83);
+  padding:1rem;
+  text-align: center;
+  color:rgb(15, 15, 83);;
+  list-style-type: none;
+  margin-left: 2rem;
+  font-style: italic;
+  font-weight: 700;
+} 
+.e-links li:first-child {
+  background-color: rgba(142, 192, 181, 0.548);
+}
+.e-links li:nth-child(2) {
+  background-color: rgba(223, 180, 164, 0.479);
+
+}
+.e-links li:nth-child(3) {
+  background-color: rgba(149, 222, 235, 0.479);
+}
+
+/* Contact section styles */
+
+.c-link a{
+  margin-left: 2rem;
+}
+.email-link, .linkedin-link, .github-link {
+  background-repeat: no-repeat;
+  background-position: left center; 
+  padding-left: 24px;               
+  background-size: 18px 18px;        
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  list-style: none;                
+}
+
+.email-link{
+   background-image: url("../images/gmail.svg");
+   background-repeat: no-repeat;
+   margin-left:2rem;
+   margin-bottom: .5rem;
+}
+
+.linkedin-link {
+  background-image:url("../images/linkedin.svg");
+  background-repeat: no-repeat;
+  margin-left:2rem;
+  margin-bottom: .5rem
+}
+
+.github-link{
+  background-image: url("../images/github.svg");
+  background-repeat: no-repeat;
+  margin-left:2rem;
+   margin-bottom: .5rem
+}
+ media (max-width: 768px) {
+  .c-link a{
+    margin-left: 1rem;
+  }
+  .email-link, .linkedin-link, .github-link {
+    margin-left: 1rem;
+  }
+}
