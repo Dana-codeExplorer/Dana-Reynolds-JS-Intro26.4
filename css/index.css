@@ -21,9 +21,14 @@ html{
  }
 
 h1{ 
+  background-color:  rgba(127, 255, 227);
   font-family:"Fredericka the Great", arial;  /* 7.transform name style*/
   text-align: center;
-  padding: 1rem; 
+  padding: .5rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  border: 2px solid rgb(15, 15, 83);
   color:rgb(15, 15, 83);  /* 2.change default color */
   font-size: clamp(2rem, 5vw, 3.5rem);     /* 6.change default font size */
 }
