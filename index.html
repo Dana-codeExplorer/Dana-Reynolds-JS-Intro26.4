@@ -13,28 +13,38 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Butterfly+Kids&family=Cabin:ital,wght@0,400..700;1,400..700&family=Fascinate&family=Fascinate+Inline&family=Fredericka+the+Great&family=Homemade+Apple&family=Inconsolata:wght@200..900&family=Yatra+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="nav">
-        <ul class="navbar-link">
-          <li class="nav-item">
-            <a class="delicious-handrawn-regular" href="#About">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="delicious-handrawn-regular" href="#Experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="delicious-handrawn-regular"href="#Connect">Connect</a>
-          </li>
-        </ul>
-      </nav>
-    <header>
+    <header class="header-container">
+        <h1>Dana A. Reynolds</h1>
+        <nav class="nav">
+          <ul class="navbar-link">
+          <!-- 11.add Home link to the navigation bar -->
+            <li class="nav-item">
+              <a class="delicious-handrawn-regular" id="home-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="delicious-handrawn-regular" id="about-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="delicious-handrawn-regular" id="experience-link" href="#Experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="delicious-handrawn-regular" id="connect-link" href="#Connect">Connect</a>
+            </li>
+            <!-- 12.add Skills link to the navigation bar -->
+            <li class="nav-item">
+              <a class="delicious-handrawn-regular" id="skills-link" href="#Skills">Skills</a>  <!-- 17. Skill link to the Skills section -->
+            </li>
+            <li class="nav-item">
+              <a class="delicious-handrawn-regular" id="projects-link" href="#Projects">Projects</a>  <!-- 18. projects  link to the Projects section -->
+            </li>
+          </ul>
+        </nav>
+    </header>
       
+    <main>
       <div class="image-container">
         <img class="reveal-image" src="./images/profilepic.jpeg" alt="an image of Dana Reynolds" width="200" height="230"/>
       </div>
-      <h1>Dana A. Reynolds</h1>
-      
-    </header>
-    <main>
       <section id="About">
           <h2>About</h2>
           <p>
@@ -66,6 +76,22 @@
             <a href="https://github.com/Danareynolds-coding">GitHub MCA</a>
           </li>
         </ul>
+      </section>
+      <!-- 13.add Skills section -->
+      <section id="Skills">
+          <h2>Skills</h2>
+       <!-- 14.add empty ul for skills section -->
+          <ul class="s-links">
+            <li>empty</li>
+          </ul>
+      </section>
+      <!-- 15.add Projects section -->
+      <section id="Projects">
+          <h2>Projects</h2>
+      <!-- 16.add empty ul for projects section -->
+          <ul class="p-links">
+            <li>empty</li>
+          </ul>
       </section>
     </main> 
     <footer>
