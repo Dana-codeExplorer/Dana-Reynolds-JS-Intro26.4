@@ -140,11 +140,34 @@ p{
 }
 
 /* Contact section styles */
-
+#Connect{
+  justify-content: center;
+  color:navy;
+/* Contact section box shadow  top row is box, row 2 is top, row 3 is bottom */
+  box-shadow: 0 4px 8px rgba(153, 6, 6, 0.1),
+              inset 0 2px 3px rgba(255, 255, 255, 0.4), 
+              0 10px 20px rgba(0, 0, 0, 0.3);
+  align-items: center;
+}
+#Connect h2{
+ 
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.c-links{
+  justify-content: space-between;
+  text-align: center;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: nowrap ;
+  list-style: none;
+}
 .c-link a{
   margin-left: 2rem;
 }
 .email-link, .linkedin-link, .github-link {
+  flex-shrink: 0;
   background-repeat: no-repeat;
   background-position: left center; 
   padding-left: 24px;               
@@ -174,7 +197,7 @@ p{
   margin-left:2rem;
    margin-bottom: .5rem
 }
- media (max-width: 768px) {
+@media (max-width: 768px) {
   .c-link a{
     margin-left: 1rem;
   }
