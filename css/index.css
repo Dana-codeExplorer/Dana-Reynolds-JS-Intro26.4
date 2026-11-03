@@ -66,6 +66,20 @@ main{
    padding-top: 1rem;
   color:rgb(15, 15, 83);
 }
+.arrow-text{
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.unicode-arrow::after{
+  content: "➔ "; 
+  color: navy; 
+  font-size: 18px; 
+  margin-right: 8px; 
+}
+
 .image-container {
   display: flex;
   overflow: hidden;
@@ -107,8 +121,7 @@ p{
 }
 /* Experience section styles */
 #Experience{
-  padding-bottom: 1rem;
-  
+  padding: 1rem;
 }
 #Experience h2{
   text-align: center;  /* 5.change alignment on section */
@@ -116,15 +129,35 @@ p{
   font-weight: 700;
   font-size: 2rem;
 }
-#Experience p{
+#Experience .note{
   text-align: center;
   font-style:italic;
-  font-weight: 400;
-  font-style: normal;
+  font-size: .9rem;
+  }
+#Experience h3{
+  display:grid;               /* 20.add layout for experience links */
+  grid-template: repeat(2, 1fr);
+  margin-bottom: .5rem;
+  padding:.5rem;
+  text-align: left;
+  color:rgb(15, 15, 83);
 }
-
+#Experience .booking{
+  padding: .5rem;
+  text-align: left;
+  border: 2px solid rgb(15, 15, 83);
+  background-color: rgba(53, 228, 190, 0.548);
+   margin-bottom: 1rem;
+}
+#Experience .teach{
+  padding: .5rem;
+  text-align: left;
+  border: 2px solid rgb(15, 15, 83);
+  background-color: rgba(6, 237, 245, 0.548);
+  margin-bottom: 1rem;
+}
 .e-links li {
-  display:grid;
+  display:grid;               /* 20.add layout for experience links */
   grid-template: repeat(3, 1fr);
   margin-bottom: 1rem;
   
@@ -133,7 +166,7 @@ p{
   text-align: center;
   color:rgb(15, 15, 83);;
   list-style-type: none;
-  margin-left: 2rem;
+  margin-left: rem;
   font-style: italic;
   font-weight: 700;
 } 
@@ -150,7 +183,8 @@ p{
 
 /* Contact section styles */
 #Connect{
-  justify-content: center;
+  padding:15px;
+  justify-content: center;;
   color:navy;
 /* 9. transform style of connect link */
   box-shadow: 0 4px 8px rgba(153, 6, 6, 0.1),
