@@ -10,7 +10,7 @@ html{
   background-size: cover;
 }
  body{
-  background-color: rgba(127, 255, 227, 0.038);
+  background-color: rgba(127, 255, 227, 0.103);
   padding: 1rem;
   }
 
@@ -21,7 +21,7 @@ html{
  }
 
 h1{ 
-  background-color:  rgba(127, 255, 227, 0.936);
+  background-color:  rgba(127, 255, 227);
   font-family:"Fredericka the Great", arial;  /* 7.transform name style*/
   text-align: center;
   padding: .5rem;
@@ -251,23 +251,6 @@ p{
   margin-left:2rem;
    margin-bottom: .5rem
 }
-#skills-section{
-  border: 3px solid rgb(15, 15, 83);
-  padding: 1rem;
-}
-.skills-list{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  list-style: none;
-}
-.skill{
-  border: 3px solid rgb(15, 15, 83);
-  padding: 1rem;
-  
-}
-
-
 @media (max-width: 768px) {
   .c-link a{
     margin-left: 1rem;
