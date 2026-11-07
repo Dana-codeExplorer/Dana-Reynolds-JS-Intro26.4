@@ -26,5 +26,5 @@ let skills=["HTML", "CSS", "JavaScript", "Express", "EJS","Node.js", "Axios", "P
 }
 skillsSection.appendChild(skillsList);
 skillsSection.style.color = "rgb(15, 15, 83)";
-// skillsSection.setAttribute("id", "skills-section");
-//skillsList.setAttribute("class", "skills-list");
+skillsSection.setAttribute("id", "skills-section");
+skillsList.setAttribute("class", "skills-list");
