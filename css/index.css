@@ -276,3 +276,17 @@ p{
     margin-left: 1rem;
   }
 }
+.message-item{
+  border: 3px solid rgb(15, 15, 83);
+  padding: 1rem;
+  list-style: none;
+}
+.users-name{
+  font-weight: 700;
+}
+.users-email{
+  font-weight: 400;
+}
+.users-message{
+  font-weight: 400;
+}

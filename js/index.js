@@ -58,8 +58,21 @@ messageForm.addEventListener('submit', function (event) {
   console.log(usersMessage);
 
   const messageItem = document.createElement("li");
-  messageItem.textContent = `${usersName} - ${usersEmail}: ${usersMessage}`;
-  //safer than innerHTML
+  const usersNameElement = document.createElement("strong");
+  const usersEmailElement = document.createElement("p");
+  const usersMessageElement = document.createElement("p");
+
+  usersNameElement.textContent = `Name: ${usersName}`;
+  usersNameElement.setAttribute("class", "users-name");
+  usersEmailElement.textContent = ` Email: ${usersEmail}`;
+  usersEmailElement.setAttribute("class", "users-email");
+  usersMessageElement.textContent = `Message: ${usersMessage}`;
+  usersMessageElement.setAttribute("class", "users-message");
+  messageItem.setAttribute("class", "message-item");
+  messageItem.appendChild(usersNameElement);
+  messageItem.appendChild(usersEmailElement);
+  messageItem.appendChild(usersMessageElement);
+  
   document.getElementById("messages-list").appendChild(messageItem);
   messageForm.reset();
 });
