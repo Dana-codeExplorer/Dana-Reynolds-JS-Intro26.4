@@ -40,6 +40,9 @@
             <li class="nav-item">
               <a class="delicious-handrawn-regular" id="message-form-link" href="#message-form">Leave a Message</a>
             </li>
+            <li class="nav-item">
+              <a class="delicious-handrawn-regular" id="messages-link" href="#message-form">Leave a Message</a>
+            </li>
           </ul>
         </nav>
     </header>
@@ -105,7 +108,7 @@
             <li></li>
           </ul>
       </section>
-      <section id="message-form">
+      <section id="messages-form">
         <h2>Leave a Message</h2>
         <p>Fill out the form below and I will get back to you as soon as possible.</p>
         <form name = "leave_message">
@@ -124,8 +127,12 @@
           </fieldset>
         </form>
       </section>
+      <section id= "messages"> 
+        <h2>Messages:</h2>
+        <p id="messages-list-p">Messages from users are here.</p>
+        <ul id="messages-list"> </ul>
+      </section>
     </main>
-
     <script src="js/index.js"></script>
   </body>
 </html>
