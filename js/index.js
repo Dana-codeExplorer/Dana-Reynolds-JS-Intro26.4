@@ -49,30 +49,37 @@ console.log(messageForm);
 messageForm.addEventListener('submit', function (event) {
   event.preventDefault();
   const usersName = event.target.usersName.value;
-  console.log(usersName);
-
+//   console.log(usersName);
   const usersEmail = event.target.usersEmail.value;
-  console.log(usersEmail);
-
+//   console.log(usersEmail);
   const usersMessage = event.target.message.value;
-  console.log(usersMessage);
+//   console.log(usersMessage);
 
-  const messageItem = document.createElement("li");
-  const usersNameElement = document.createElement("strong");
-  const usersEmailElement = document.createElement("p");
-  const usersMessageElement = document.createElement("p");
-
-  usersNameElement.textContent = `Name: ${usersName}`;
-  usersNameElement.setAttribute("class", "users-name");
-  usersEmailElement.textContent = ` Email: ${usersEmail}`;
-  usersEmailElement.setAttribute("class", "users-email");
-  usersMessageElement.textContent = `Message: ${usersMessage}`;
-  usersMessageElement.setAttribute("class", "users-message");
-  messageItem.setAttribute("class", "message-item");
-  messageItem.appendChild(usersNameElement);
-  messageItem.appendChild(usersEmailElement);
-  messageItem.appendChild(usersMessageElement);
+  const messageList = document.querySelector('ul#messages-list');
+  messageList.setAttribute('class', 'messages-list');
+  const newMessage = document.createElement('li');
   
-  document.getElementById("messages-list").appendChild(messageItem);
+  newMessage.innerHTML = `<a href="mailto:${usersEmail}" class="users-name">${usersName}</a><span>${usersMessage}</span>`;
+
+  const usersMessageElement = document.createElement('span');
+  usersMessageElement.textContent = `${usersMessage}`;
+  usersMessageElement.setAttribute('class', 'users-message');
+  
+  newMessage.appendChild(usersMessageElement);
+  
+  messageList.appendChild(newMessage);
+  const removeButton = document.createElement('button');
+  removeButton.innerText = 'remove';
+  removeButton.setAttribute('type', 'button');
+  removeButton.addEventListener('click', function () {
+    const entry = removeButton.parentElement;
+    entry.remove();
+    newMessage.appendChild(removeButton);
+    
+  });
+  newMessage.appendChild(removeButton);
+  
   messageForm.reset();
+
 });
+

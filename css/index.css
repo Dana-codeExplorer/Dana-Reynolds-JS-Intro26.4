@@ -276,17 +276,22 @@ p{
     margin-left: 1rem;
   }
 }
-.message-item{
+
+.message-list{
+  background-color: rgba(250, 244, 201, 0.77);
   border: 3px solid rgb(15, 15, 83);
   padding: 1rem;
   list-style: none;
 }
 .users-name{
+  color: rgb(15, 15, 83);
   font-weight: 700;
+
 }
 .users-email{
-  font-weight: 400;
+  font-weight: 500;
 }
 .users-message{
-  font-weight: 400;
+  font-weight: 500;
+  color: rgb(2, 13, 2);
 }
