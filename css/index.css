@@ -306,8 +306,6 @@ input, textarea {
 }
 
 #messages-list {
-  
-  padding: 0.5rem;
   border-top: 3px solid rgb(15, 15, 83);
   margin-bottom: 1em;
   list-style: none;
@@ -324,7 +322,7 @@ button {
   margin-bottom: 1em;
 }
 #messages {
-  width: 90%;
+  width: 100%;
   box-sizing: border-box;
   text-align: center;
   margin-left: auto;
