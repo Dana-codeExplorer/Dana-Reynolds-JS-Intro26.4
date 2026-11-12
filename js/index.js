@@ -59,7 +59,7 @@ messageForm.addEventListener('submit', function (event) {
 
   const newMessage = document.createElement('li');
 
-  newMessage.innerHTML = `<a href="mailto:${usersEmail}" class="users-name">${usersName} </a><span class="users-message">${usersMessage}</span>`;
+  newMessage.innerHTML = `<a href="mailto:${usersEmail}" class="users-name">${usersName} </a><br><span class="users-message">${usersMessage}</span>`;
 
   const removeButton = document.createElement('button');
   removeButton.innerText = 'remove';

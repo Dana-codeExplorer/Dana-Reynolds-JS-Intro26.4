@@ -10,7 +10,8 @@ html {
 }
 body {
   background-color: rgba(127, 255, 227, 0.038);
-  padding: 1rem;
+  padding:1rem;
+
 }
 
 .header-container {
@@ -34,21 +35,27 @@ h1 {
 }
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 2rem; /* 4.add spacing */
+  padding: 1rem;
 }
 .navbar-link {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
-  gap: 1.5rem;
+  gap:.75rem;
   padding: 0;
   margin: 0;
 }
 .nav-item .delicious-handrawn-regular {
+  display: inline-block;
+  white-space: nowrap;  
+  /* keeps multiple words on one line */
   background-color: rgba(127, 255, 227);
   border-radius: 5px;
-  padding: 5px;
+  padding: 6px 12px;
+  /* adds horizontal padding */
   border: 1px solid rgb(15, 15, 83);
   text-decoration: none;
   color: rgb(15, 15, 83);
