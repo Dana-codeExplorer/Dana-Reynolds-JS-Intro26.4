@@ -266,6 +266,68 @@ p{
   padding-right:.5rem;
   padding-left: .5rem;
 }
+form{
+  display: flex;
+  flex-direction: column;
+  padding:1rem;
+  background-color: rgba(250, 244, 201, 0.77);
+  border: 3px solid rgb(15, 15, 83);
+  border-radius: 5px;
+}
+
+input{
+  margin: .5rem 0;
+  background-color: rgba(128, 194, 221, 0.77);
+  border: 3px solid rgb(15, 15, 83);
+  padding: .5%;
+}
+textarea{
+  background-color: rgba(128, 194, 221, 0.77);
+  border: 3px solid rgb(15, 15, 83);
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+#messages-list{
+  padding: .5rem;
+  border-top: 3px solid rgb(15, 15, 83);
+   border-bottom: 3px solid rgb(15, 15, 83);
+  margin-bottom: 1em;
+  list-style: none;
+}
+.message-list-p{
+  margin-bottom: .75rem;
+  list-style: none;
+}
+button{
+  text-align: center;
+  background-color: rgba(138, 216, 224, 0.77);
+  padding:2px;
+  border: 3px solid rgb(15, 15, 83);
+  border-radius: 5px;
+  margin-left:10%;
+  margin-top:1rem;
+  margin-bottom: 1em;
+}
+#messages{
+  padding: .5rem;
+  margin-bottom:1rem;
+  background-color: rgba(250, 244, 201, 0.77);
+  border-radius: 5px;
+  border: 3px solid rgb(15, 15, 83);
+}
+.users-name{
+  color: rgb(15, 15, 83);
+  font-weight: 700;
+  font: size 2em;
+ 
+}
+.users-email{
+  font-weight: 500;
+}
+.users-message{
+  font-weight: 500;
+  color: rgb(2, 13, 2);
+}
 
 @media (max-width: 768px) {
   .c-link a{
@@ -275,23 +337,4 @@ p{
   .email-link, .linkedin-link, .github-link {
     margin-left: 1rem;
   }
-}
-
-.message-list{
-  background-color: rgba(250, 244, 201, 0.77);
-  border: 3px solid rgb(15, 15, 83);
-  padding: 1rem;
-  list-style: none;
-}
-.users-name{
-  color: rgb(15, 15, 83);
-  font-weight: 700;
-
-}
-.users-email{
-  font-weight: 500;
-}
-.users-message{
-  font-weight: 500;
-  color: rgb(2, 13, 2);
 }

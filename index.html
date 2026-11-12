@@ -115,21 +115,25 @@
           <fieldset>
             <legend>Leave a Message:</legend>
             <label for="usersName">Name:</label>
-            <input type= "text" id= "usersName" name= "usersName" required placeHolder= "Enter username">
+            <input type="text" id= "usersName" name= "usersName" required placeholder= "Enter username">
             <br>
             <label for="usersEmail">Email:</label>
             <input type="email" id="usersEmail" name="usersEmail" required placeholder="Enter email">
             <br>
-            <label for="usersMessage">Message:</label>
-            <textarea id="usersMessage" name="message" rows="4" cols='40' required></textarea>
+            <label for="message">Message:</label>
+            
+            <textarea id="message" name="message" rows="4" cols='60' required></textarea>
             <br>
-            <button type="submit">Submit</button>
+            <div class="button-container">
+              <button type="submit">Submit</button>
+            </div>
+            
           </fieldset>
         </form>
       </section>
       <section id= "messages"> 
         <h2>Messages:</h2>
-        <p id="messages-list-p">Messages from users are here.</p>
+        <p class="message-list-p">Messages from users are here.</p>
         <ul id="messages-list"> </ul>
       </section>
     </main>
