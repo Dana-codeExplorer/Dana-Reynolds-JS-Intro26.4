@@ -303,10 +303,7 @@ textarea {
   margin-bottom: 1em;
   list-style: none;
 }
-.message-list-p {
-  margin-bottom: 0.75rem;
-  list-style: none;
-}
+
 button {
   text-align: center;
   background-color: rgba(138, 216, 224, 0.77);

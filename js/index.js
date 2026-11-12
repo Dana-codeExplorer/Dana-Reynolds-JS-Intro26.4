@@ -49,17 +49,17 @@ console.log(messageForm);
 messageForm.addEventListener('submit', function (event) {
   event.preventDefault();
   const usersName = event.target.usersName.value;
-  //   console.log(usersName);
+     console.log(usersName);
   const usersEmail = event.target.usersEmail.value;
-  //   console.log(usersEmail);
-  const message = event.target.message.value;
-  //   console.log(usersMessage);
-
-  const messageList = document.querySelector('ul#messages-list');
+    console.log(usersEmail);
+  const usersMessage = event.target.message.value;
+     console.log(usersMessage);
+  const messageSection = document.getElementById('messages');
+  const messageList = messageSection.querySelector('ul#messages-list');
 
   const newMessage = document.createElement('li');
 
-  newMessage.innerHTML = `<a href="mailto:${usersEmail}" class="users-name">Email: ${usersName} </a><p>message: <span class="users-message">${message}</span></p>`;
+  newMessage.innerHTML = `<a href="mailto:${usersEmail}" class="users-name">${usersName} </a><span class="users-message">${usersMessage}</span>`;
 
   const removeButton = document.createElement('button');
   removeButton.innerText = 'remove';
@@ -67,7 +67,7 @@ messageForm.addEventListener('submit', function (event) {
   removeButton.setAttribute('class', 'button');
    
   removeButton.addEventListener('click', function () {
-    const entry = removeButton.parentElement;
+    const entry = removeButton.parentNode;
     entry.remove();
   });
   newMessage.appendChild(removeButton);
