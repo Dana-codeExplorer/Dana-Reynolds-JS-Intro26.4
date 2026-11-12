@@ -17,7 +17,7 @@
         <h1>Dana A. Reynolds</h1>
         <nav class="nav">
           <ul class="navbar-link">
-          <!-- 11.add Home link to the navigation bar -->
+          
             <li class="nav-item">
               <a class="delicious-handrawn-regular" id="home-link" href="./index.html">Home</a>
             </li>
@@ -30,12 +30,18 @@
             <li class="nav-item">
               <a class="delicious-handrawn-regular" id="connect-link" href="#Connect">Connect</a>
             </li>
-            <!-- 12.add Skills link to the navigation bar -->
+            
             <li class="nav-item">
-              <a class="delicious-handrawn-regular" id="skills-link" href="#Skills">Skills</a>  <!-- 17. Skill link to the Skills section -->
+              <a class="delicious-handrawn-regular" id="skills-section" href="#skills-section">Skills</a>  
             </li>
             <li class="nav-item">
-              <a class="delicious-handrawn-regular" id="projects-link" href="#Projects">Projects</a>  <!-- 18. projects  link to the Projects section -->
+              <a class="delicious-handrawn-regular" id="projects-link" href="#Projects">Projects</a>  
+            </li>
+            <li class="nav-item">
+              <a class="delicious-handrawn-regular" id="messages-form-link" href="#messages-form">Leave a Message</a>
+            </li>
+            <li class="nav-item">
+              <a class="delicious-handrawn-regular" id="messages-link" href="#messages">Messages</a>
             </li>
           </ul>
         </nav>
@@ -43,9 +49,8 @@
       
     <main>
       <div class="image-container">
-        <p class="unicode-arrow">Welcome to <span style="color:rgb(160, 79, 49);">my</span> portfolio! </p>
-        <img class="reveal-image" src="./images/headshot.jpg" alt="an image of Dana Reynolds" width="220
-        " height="300"/>
+        <p class="unicode-arrow">Welcome to <span style="color:rgb(160, 79, 49)">my</span> portfolio</p>
+        <img class="reveal-image fluid-img" src="./images/headshot.jpg" alt="an image of Dana Reynolds" width="220" height="300"/>
       </div>
       <section id="About">
           <h2>About</h2>
@@ -57,12 +62,12 @@
         <h2>Experience</h2>
         <h3>Work Experience:</h3>
         <div class="booking">
-          <h4>Booking/Detention Officer:
+          <h4>Booking/Detention Officer:</h4>
           <p>Cochise County Sheriff's Office</p>
           <p class="duties"> Responsible for processing individuals into the county jail, ensuring compliance with legal procedures, and maintaining accurate records of detainees which included fingerprinting , running ACJIS warrant checks, and other necessary administrative tasks.</p>
         </div>
         <div class="teach">
-          <h4>SubstituteTeacher and Aide:</h4>
+          <h4>Substitute Teacher and Aide:</h4>
           <p>Bisbee Unified School District, Douglas Unified School District, Mesa Public School District</p>
           <p class="duties">Assisted in the education of students, provided support to teachers, and helped maintain a positive learning environment in various school districts.</p>
         </div>
@@ -92,21 +97,45 @@
           </li>
         </ul>
       </section>
-      <!-- 13.add Skills section -->
       <section id="skills-section">
           <h2>Skills:</h2>
-       <!-- 14.add empty ul for skills section -->
       <ul></ul>
         </section>
-      <!-- 15.add Projects section -->
       <section id="Projects">
           <h2>Projects:</h2>
-      <!-- 16.add empty ul for projects section -->
           <ul class="p-links">
             <li></li>
           </ul>
       </section>
-    </main> 
+      <section id="messages-form">
+        <h2>Leave a Message</h2>
+        
+        <form name = "leave_message">
+          <fieldset>
+            <legend>Leave a Message:</legend>
+            <label for="usersName">Name:</label>
+            <input type="text" id= "usersName" name= "usersName" required placeholder= "Enter username">
+            <br>
+            <label for="usersEmail">Email:</label>
+            <input type="email" id="usersEmail" name="usersEmail" required placeholder="Enter email">
+            <br>
+            <label for="usersMessage">Message:</label>
+            
+            <textarea id="usersMessage" name="usersMessage" required></textarea>
+            <br>
+            <div class="button-container">
+              <button type="submit">Submit</button>
+            </div>
+            
+          </fieldset>
+        </form>
+      </section>
+      <section id= "messages"> 
+        <h2>Messages</h2>
+       
+        <ul id="messages-list"> </ul>
+      </section>
+    </main>
     <script src="js/index.js"></script>
   </body>
 </html>

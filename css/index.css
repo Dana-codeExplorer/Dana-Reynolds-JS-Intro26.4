@@ -1,94 +1,101 @@
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-  background-image: url("../images/sea.webp") ;  /* 1.change background color */
+html {
+  background-image: url('../images/sea.webp'); /* 1.change background color */
   background-repeat: no-repeat;
   background-size: cover;
 }
- body{
+body {
   background-color: rgba(127, 255, 227, 0.038);
-  padding: 1rem;
-  }
+  padding:1rem;
 
- .header-container{  /* 19. sticky header */
-  position: sticky; 
+}
+
+.header-container {
+  /* 19. sticky header */
+  position: sticky;
   top: 0px;
   z-index: 1000;
- }
+}
 
-h1{ 
-  background-color:  rgba(127, 255, 227, 0.936);
-  font-family:"Fredericka the Great", arial;  /* 7.transform name style*/
+h1 {
+  background-color: rgba(127, 255, 227, 0.936);
+  font-family: 'Fredericka the Great', arial; /* 7.transform name style*/
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   margin-right: auto;
   margin-left: auto;
   border-radius: 10px;
   border: 2px solid rgb(15, 15, 83);
-  color:rgb(15, 15, 83);  /* 2.change default color */
-  font-size: clamp(2rem, 5vw, 3.5rem);     /* 6.change default font size */
+  color: rgb(15, 15, 83); /* 2.change default color */
+  font-size: clamp(2rem, 5vw, 3.5rem); /* 6.change default font size */
 }
-.nav{
-  display:flex;
-  justify-content: space-evenly;
+.nav {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;        /* 4.add spacing */
+  padding: 1rem;
 }
-.navbar-link{ 
-  display:flex;
-  list-style:none;
-  gap:1.5rem;
-  padding:0;
-  margin:0;
+.navbar-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap:.75rem;
+  padding: 0;
+  margin: 0;
 }
 .nav-item .delicious-handrawn-regular {
-   background-color: rgba(127, 255, 227);
-   border-radius:5px;
-   padding:5px;
-   border: 1px solid rgb(15, 15, 83);
-   text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;  
+  /* keeps multiple words on one line */
+  background-color: rgba(127, 255, 227);
+  border-radius: 5px;
+  padding: 6px 12px;
+  /* adds horizontal padding */
+  border: 1px solid rgb(15, 15, 83);
+  text-decoration: none;
   color: rgb(15, 15, 83);
   font-size: 1.2rem;
-  font-family: "Delicious Handrawn", cursive;     /* 3.customize font */
+  font-family: 'Delicious Handrawn', cursive; /* 3.customize font */
   font-weight: 400;
   font-style: normal;
-  transition:color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
-.nav-item .delicious-handrawn-regular:hover{
-  color:rgb(160, 79, 49);
+.nav-item .delicious-handrawn-regular:hover {
+  color: rgb(160, 79, 49);
 }
 
-main{
-  background-color:rgba(127, 255, 227, 0.548);
-   backdrop-filter:blur(2px);
-   border-radius:  10px;
-   padding-right: 2rem;
-   padding-left: 2rem;
-   padding-top: 1rem;
-  color:rgb(15, 15, 83);
+main {
+  background-color: rgba(127, 255, 227, 0.548);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  color: rgb(15, 15, 83);
 }
-.arrow-text{
+.arrow-text {
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.unicode-arrow::after{
-  content: "➔ "; 
-  color: navy; 
-  font-size: 18px; 
-  margin-right: 8px; 
+.unicode-arrow::after {
+  content: '➔ ';
+  color: navy;
+  font-size: 18px;
+  margin-right: 8px;
 }
 
 .image-container {
   display: flex;
   overflow: hidden;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
 .reveal-image {
@@ -98,65 +105,67 @@ main{
 .image-container:hover .reveal-image {
   opacity: 1;
 }
-img{                         /* 8.add picture */
-  display:block;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  border:4px solid rgb(15, 15, 83);
+  border: 4px solid rgb(15, 15, 83);
 }
-section{
-  
-  margin-bottom: .5rem;
+section {
+  margin-bottom: 0.5rem;
 }
 
 h2 {
-  margin-bottom: .5em;
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-family: "Delicious Handrawn", cursive;
+  margin-bottom: 0.5em;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-family: 'Delicious Handrawn', cursive;
   font-weight: 400;
   font-style: normal;
 }
-p{
-  margin-bottom:.5em;
-  font-family: "Ubuntu", sans-serif;
+p {
+  margin-bottom: 0.5em;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: clamp(.5rem, 2.5vw, 1rem);
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
 }
 /* Experience section styles */
-#Experience{
+#Experience {
   padding: 1rem;
 }
-#Experience h2{
-  text-align: center;  /* 5.change alignment on section */
+#Experience h2 {
+  text-align: center; /* 5.change alignment on section */
   color: rgb(160, 79, 49);
   font-weight: 700;
-  font-size: 2rem;
-}
-#Experience .note{
   text-align: center;
-  font-style:italic;
-  font-size: .9rem;
-  }
-#Experience h3{
-  font-size: clamp(1rem, 2.5vw, 2rem);
-  display:grid;               /* 20.add layout for experience links */
-  grid-template: repeat(2, 1fr);
-  margin-bottom: .5rem;
-  padding:.5rem;
-  text-align: left;
-  color:rgb(15, 15, 83);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
-#Experience .booking{
-  padding: .5rem;
+#Experience .note {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+#Experience h3 {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  display: grid; /* 20.add layout for experience links */
+  grid-template: repeat(2, 1fr);
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  text-align: left;
+  color: rgb(15, 15, 83);
+}
+#Experience .booking {
+  padding: 0.5rem;
   text-align: left;
   border: 2px solid rgb(15, 15, 83);
   background-color: rgba(53, 228, 190, 0.548);
   margin-bottom: 1rem;
 }
-#Experience .teach{
-  padding: .5rem;
+#Experience .teach {
+  padding: 0.5rem;
   text-align: left;
   border: 2px solid rgb(15, 15, 83);
   background-color: rgba(6, 237, 245, 0.548);
@@ -165,114 +174,194 @@ p{
 .duties {
   font-style: italic;
   font-weight: 600;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .e-links li {
-  display:grid;               /* 20.add layout for experience links */
+  display: grid; /* 20.add layout for experience links */
   grid-template: repeat(3, 1fr);
   margin-bottom: 1rem;
-  
-  border:3px solid rgb(15, 15, 83);
-  padding:1rem;
+
+  border: 3px solid rgb(15, 15, 83);
+  padding: 1rem;
   text-align: center;
-  color:rgb(15, 15, 83);;
+  color: rgb(15, 15, 83);
   list-style-type: none;
   margin-left: rem;
   font-style: italic;
   font-weight: 700;
-} 
+}
 .e-links li:first-child {
   background-color: rgba(142, 192, 181, 0.548);
 }
 .e-links li:nth-child(2) {
   background-color: rgba(223, 180, 164, 0.479);
-
 }
 .e-links li:nth-child(3) {
   background-color: rgba(149, 222, 235, 0.479);
 }
 
 /* Contact section styles */
-#Connect{
-  padding:15px;
-  justify-content: center;;
-  color:navy;
-/* 9. transform style of connect link */
-  box-shadow: 0 4px 8px rgba(153, 6, 6, 0.1),
-              inset 0 2px 3px rgba(255, 255, 255, 0.4), 
-              0 10px 20px rgba(0, 0, 0, 0.3);
+#Connect {
+  padding: 15px;
+  justify-content: center;
+  color: navy;
+  /* 9. transform style of connect link */
+  box-shadow:
+    0 4px 8px rgba(153, 6, 6, 0.1),
+    inset 0 2px 3px rgba(255, 255, 255, 0.4),
+    0 10px 20px rgba(0, 0, 0, 0.3);
   align-items: center;
 }
-#Connect h2{
+#Connect h2 {
   margin-bottom: 1rem;
   text-align: center;
   font-weight: 700;
   font-size: 2rem;
 }
-.c-links{
+.c-links {
   justify-content: space-between;
   text-align: center;
-  display:flex;
-  flex-direction:row;
-  flex-wrap: wrap ;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
 }
-.c-link a{
+.c-link a {
   margin-left: 2rem;
 }
-.email-link, .linkedin-link, .github-link {
+.email-link,
+.linkedin-link,
+.github-link {
   flex-shrink: 0;
   background-repeat: no-repeat;
-  background-position: left center; 
-  padding-left: 24px;               
-  background-size: 18px 18px;        
+  background-position: left center;
+  padding-left: 24px;
+  background-size: 18px 18px;
   margin-left: 2rem;
   margin-bottom: 0.5rem;
-  list-style: none;                
+  list-style: none;
 }
 
-.email-link{
-   background-image: url("../images/gmail.svg");  /* 10.social media icons */
-   background-repeat: no-repeat;
-   margin-left:2rem;
-   margin-bottom: .5rem;
+.email-link {
+  background-image: url('../images/gmail.svg'); /* 10.social media icons */
+  background-repeat: no-repeat;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .linkedin-link {
-  background-image:url("../images/linkedin.svg");
+  background-image: url('../images/linkedin.svg');
   background-repeat: no-repeat;
-  margin-left:2rem;
-  margin-bottom: .5rem
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-.github-link{
-  background-image: url("../images/github.svg");
+.github-link {
+  background-image: url('../images/github.svg');
   background-repeat: no-repeat;
-  margin-left:2rem;
-   margin-bottom: .5rem
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
 }
-#skills-section{
+#skills-section {
   border: 3px solid rgb(15, 15, 83);
   padding: 1rem;
 }
-.skills-list{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
   list-style: none;
 }
-.skill{
+.skill {
+  border: 3px solid rgb(15, 15, 83);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+#messages-form {
+  display: grid;
+  max-width: 600px;
+  padding:.75rem;
+  margin: 0 auto;
+  gap:.75rem;
+  background-color: rgba(250, 244, 201, 0.77);
+  border: 3px solid rgb(15, 15, 83);
+  border-radius: 5px;
+}
+#messages-form h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+form {
   border: 3px solid rgb(15, 15, 83);
   padding: 1rem;
-  
+}
+input, textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5%;
+  margin: 0.75rem 0;
+  background-color: rgba(128, 194, 221, 0.77);
+  border: 1px solid rgb(15, 15, 83);
+  border-radius: 5px;
 }
 
+#messages-list {
+  border-top: 3px solid rgb(15, 15, 83);
+  margin-bottom: 1em;
+  list-style: none;
+}
+
+button {
+  text-align: center;
+  background-color: rgba(138, 216, 224, 0.77);
+  padding: 2px;
+  border: 3px solid rgb(15, 15, 83);
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-top: 1rem;
+  margin-bottom: 1em;
+}
+#messages {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(1rem, 3vw, 2rem);
+  margin-bottom: 1rem;
+  background-color: rgba(250, 244, 201, 0.77);
+  border-radius: 5px;
+  border: 3px solid rgb(15, 15, 83);
+}
+.users-name {
+  color: rgb(15, 15, 83);
+  font-weight: 700;
+  font-size:90%;
+}
+.users-email {
+  font-weight: 500;
+}
+.users-message {
+  font-weight: 500;
+  color: rgb(2, 13, 2);
+}
 
 @media (max-width: 768px) {
-  .c-link a{
+  .c-link a {
+    margin-left: 1rem;
+    margin-right: 0%;
+  }
+  .email-link,
+  .linkedin-link,
+  .github-link {
     margin-left: 1rem;
   }
-  .email-link, .linkedin-link, .github-link {
-    margin-left: 1rem;
+  .image-container p{
+    display: none;
+  }
+  .form-row-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
   }
 }
