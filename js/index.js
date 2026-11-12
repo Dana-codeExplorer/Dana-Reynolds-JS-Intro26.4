@@ -52,7 +52,7 @@ messageForm.addEventListener('submit', function (event) {
      console.log(usersName);
   const usersEmail = event.target.usersEmail.value;
     console.log(usersEmail);
-  const usersMessage = event.target.message.value;
+  const usersMessage = event.target.usersMessage.value;
      console.log(usersMessage);
   const messageSection = document.getElementById('messages');
   const messageList = messageSection.querySelector('ul#messages-list');
