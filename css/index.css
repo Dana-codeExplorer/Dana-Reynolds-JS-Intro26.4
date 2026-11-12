@@ -106,7 +106,8 @@ main {
   opacity: 1;
 }
 img {
-  /* 8.add picture */
+  max-width: 100%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -277,9 +278,11 @@ p {
   padding-left: 0.5rem;
 }
 #messages-form {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
+  display: grid;
+  max-width: 600px;
+  padding:.75rem;
+  margin: 0 auto;
+  gap:.75rem;
   background-color: rgba(250, 244, 201, 0.77);
   border: 3px solid rgb(15, 15, 83);
   border-radius: 5px;
@@ -292,19 +295,18 @@ form {
   border: 3px solid rgb(15, 15, 83);
   padding: 1rem;
 }
-input {
-  margin: 0.5rem 0;
-  background-color: rgba(128, 194, 221, 0.77);
-  border: 3px solid rgb(15, 15, 83);
+input, textarea {
+  box-sizing: border-box;
+  width: 100%;
   padding: 0.5%;
-}
-textarea {
+  margin: 0.75rem 0;
   background-color: rgba(128, 194, 221, 0.77);
-  border: 3px solid rgb(15, 15, 83);
-  margin: 1rem 0;
+  border: 1px solid rgb(15, 15, 83);
   border-radius: 5px;
 }
+
 #messages-list {
+  
   padding: 0.5rem;
   border-top: 3px solid rgb(15, 15, 83);
   margin-bottom: 1em;
@@ -322,9 +324,12 @@ button {
   margin-bottom: 1em;
 }
 #messages {
+  width: 90%;
+  box-sizing: border-box;
   text-align: center;
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
-  padding: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(1rem, 3vw, 2rem);
   margin-bottom: 1rem;
   background-color: rgba(250, 244, 201, 0.77);
   border-radius: 5px;
@@ -333,7 +338,7 @@ button {
 .users-name {
   color: rgb(15, 15, 83);
   font-weight: 700;
-  font-size:50%;
+  font-size:90%;
 }
 .users-email {
   font-weight: 500;
@@ -352,5 +357,13 @@ button {
   .linkedin-link,
   .github-link {
     margin-left: 1rem;
+  }
+  .image-container p{
+    display: none;
+  }
+  .form-row-half {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
   }
 }
