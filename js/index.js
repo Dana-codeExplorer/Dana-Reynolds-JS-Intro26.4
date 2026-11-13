@@ -75,7 +75,7 @@ fetch('https://api.github.com/users/Dana-codeExplorer/repos')
       const project = document.createElement('li');
       project.innerText = repositories[i].name;
       projectList.appendChild(project);
-      project.setAttribute('id', 'project');
+      project.setAttribute('class', 'project');
       console.log(project);
     }
   })

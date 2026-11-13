@@ -361,14 +361,12 @@ button {
   gap: 0.5rem;
   list-style: none;
 }
-#project {
+.project {
   background-color: rgba(250, 244, 201, 0.592);
   border: 3px solid rgb(15, 15, 83);
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding: 0.5rem;
 }
-
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
   .c-link a {
     margin-left: 1rem;
     margin-right: 0%;
