@@ -351,6 +351,7 @@ button {
 }
 /* Projects section styles******** */
 #Projects {
+  background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb);
   border: 3px solid rgb(15, 15, 83);
   padding: 1rem;
 }
@@ -360,7 +361,8 @@ button {
   gap: 0.5rem;
   list-style: none;
 }
-.project {
+#project {
+  background-color: rgba(250, 244, 201, 0.592);
   border: 3px solid rgb(15, 15, 83);
   padding-right: 0.5rem;
   padding-left: 0.5rem;
