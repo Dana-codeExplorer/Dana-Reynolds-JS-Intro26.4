@@ -75,18 +75,15 @@ messageForm.addEventListener('submit', function (event) {
   messageForm.reset();
 });
 
-fetch('https://api.github.com/users/{Dana-codeExplorer}/repos')
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error(
-        `Failed to fetch GitHub user with Status: ${response.status}`,
-      );
-    }
-    return response.json();
+fetch('https://api.github.com/users/Dana-codeExplorer/repos')
+  .then((response) => response.json())
+  .then((json) => {
+    const repositories = json;
+    console.log(repositories);
   })
-  .then((user) => {
-    console.log('Success', user);
-  })
-  .catch((error) => {
-    console.error('Fetch error', error);
-  });
+  // .then((user) => {
+  //   console.log('Success', user);
+  // })
+  // .catch((error) => {
+  //   console.error('Fetch error', error);
+  // });
