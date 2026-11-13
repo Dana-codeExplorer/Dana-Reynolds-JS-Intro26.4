@@ -262,11 +262,13 @@ p {
   margin-left: 2rem;
   margin-bottom: 0.5rem;
 }
+/* Skills section styles */
+
 #skills-section {
   border: 3px solid rgb(15, 15, 83);
   padding: 1rem;
 }
-.skills-list {
+#skills-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 0.5rem;
@@ -277,6 +279,8 @@ p {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
+
+/* Messages form styles*******/
 #messages-form {
   display: grid;
   max-width: 600px;
@@ -344,6 +348,22 @@ button {
 .users-message {
   font-weight: 500;
   color: rgb(2, 13, 2);
+}
+/* Projects section styles******** */
+#Projects {
+  border: 3px solid rgb(15, 15, 83);
+  padding: 1rem;
+}
+#project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
+  list-style: none;
+}
+.project {
+  border: 3px solid rgb(15, 15, 83);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 @media (max-width: 768px) {
