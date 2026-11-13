@@ -49,11 +49,11 @@ console.log(messageForm);
 messageForm.addEventListener('submit', function (event) {
   event.preventDefault();
   const usersName = event.target.usersName.value;
-     console.log(usersName);
+  console.log(usersName);
   const usersEmail = event.target.usersEmail.value;
-    console.log(usersEmail);
+  console.log(usersEmail);
   const usersMessage = event.target.usersMessage.value;
-     console.log(usersMessage);
+  console.log(usersMessage);
   const messageSection = document.getElementById('messages');
   const messageList = messageSection.querySelector('ul#messages-list');
 
@@ -65,7 +65,7 @@ messageForm.addEventListener('submit', function (event) {
   removeButton.innerText = 'remove';
   removeButton.setAttribute('type', 'button');
   removeButton.setAttribute('class', 'button');
-   
+
   removeButton.addEventListener('click', function () {
     const entry = removeButton.parentNode;
     entry.remove();
@@ -74,3 +74,19 @@ messageForm.addEventListener('submit', function (event) {
   messageList.appendChild(newMessage);
   messageForm.reset();
 });
+
+fetch('https://api.github.com/users/{Dana-codeExplorer}/repos')
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(
+        `Failed to fetch GitHub user with Status: ${response.status}`,
+      );
+    }
+    return response.json();
+  })
+  .then((user) => {
+    console.log('Success', user);
+  })
+  .catch((error) => {
+    console.error('Fetch error', error);
+  });
