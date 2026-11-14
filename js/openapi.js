@@ -1,8 +1,6 @@
 
-const api_key = "OPENAI_API_KEY=live_CJbvF8faSwrg8I7EMl0j2VfukMaE3mpjRo66nJYWc3I6NIKS5tD8KoLiwJtn9mNZ";
-const handleFetchCatBreeds = () => {
-  getCatsBreeds();
-};
+const api_key = "live_CJbvF8faSwrg8I7EMl0j2VfukMaE3mpjRo66nJYWc3I6NIKS5tD8KoLiwJtn9mNZ";
+
 const breeds_url = "https://api.thecatapi.com/v1/breeds";
 
 async function getCatsBreeds() {
@@ -30,7 +28,7 @@ async function getCatsBreeds() {
   
 }
 
-document.querySelector("#fetch-cat-breeds").addEventListener("click", handleFetchCatBreeds);
+document.querySelector("#fetch-cat-breeds").addEventListener("click", getCatsBreeds);
  
  
   

@@ -1,4 +1,49 @@
 .cat-body {
-  background-color: black;
+  color: black;
+  background-color: lightblue;
+}
+.cat-button{
+  padding: .75em;
+  background-color: lightskyblue;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.cat-h1 {
+  background-color: transparent;
+  color: black;
+  border: 1px solid white;
+}
+.cat-navbar {
+  display: flex;
+  background-color: transparent;
   color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.cat-navList {
+  justify-content: center;
+  list-style: none;
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.cat-navItem {
+  color: black;
+  font-weight: 900;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+}
+#search-cat-results {
+  color: black;
+}
+label {
+  color: black;
+  font-weight: 900;
+  font-size: 1.2rem;
 }

@@ -14,10 +14,10 @@ curl -H "x-api-key: YOUR-API-KEY" https://api.thecatapi.com/v1/breeds/{BREED_ID}
 or
 curl -H "x-api-key: YOUR-API-KEY" "https://api.thecatapi.com/v1/breeds?breed_groups=Short-haired,Rex" 
 or
-searchbreeds
+search breeds:
 curl -H "x-api-key: YOUR-API-KEY" "https://api.thecatapi.com/v1/breeds/search?q=siamese" 
 
-allbreeds
+all breeds:
 curl -H "x-api-key: YOUR-API-KEY" https://api.thecatapi.com/v1/breeds 
 or 
 Get an image by ID
