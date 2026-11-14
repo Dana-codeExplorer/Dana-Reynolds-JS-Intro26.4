@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="css/index.css" />
     <title>OpenAPI</title>
   </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./openapi.html">Cat API</a></li>
+  <body class="cat-body">
+    <nav class="cat-navbar">
+      <ul class="cat-navList">
+        <li class="cat-navItem"><a href="./index.html">Home</a></li>
+        <li class="cat-navItem"><a href="./openapi.html">Cat API</a></li>
       </ul>
     </nav>
     <h1>Cat API</h1>
+    <!-- Cat Breeds Section ***** -->
+    <h2>Cat Breeds</h2>
+    <div id="cat-breeds"></div>
+    <button id="fetch-cat-breeds">Fetch Cats Breeds</button>
+    <!-- Cat Fact Section ***** -->
+    <h2>Cat Fact</h2>
+    <div id="cat-fact"></div>
+    <button id="fetch-cat-fact">Fetch Cats Fact</button>
     <script src="js/openapi.js"></script>
   </body>
 </html>

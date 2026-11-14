@@ -1,0 +1,35 @@
+1. pet with photos
+curl -X POST -H "x-api-key: YOUR-API-KEY" -H "Content-Type: multipart/form-data" \
+-F "name=Mochi" \
+-F "external_owner_id=usr_8b3d91" \
+-F "images=@/path/to/side.jpg" \
+-F "images=@/path/to/face.jpg" \
+https://api.thecatapi.com/v1/pets 
+
+2.breed
+curl -X POST -H "x-api-key: YOUR-API-KEY" https://api.thecatapi.com/v1/pets/{pet_id}/genealogy 
+or
+breed details
+curl -H "x-api-key: YOUR-API-KEY" https://api.thecatapi.com/v1/breeds/{BREED_ID}
+or
+curl -H "x-api-key: YOUR-API-KEY" "https://api.thecatapi.com/v1/breeds?breed_groups=Short-haired,Rex" 
+or
+searchbreeds
+curl -H "x-api-key: YOUR-API-KEY" "https://api.thecatapi.com/v1/breeds/search?q=siamese" 
+
+allbreeds
+curl -H "x-api-key: YOUR-API-KEY" https://api.thecatapi.com/v1/breeds 
+or 
+Get an image by ID
+curl -H "x-api-key: YOUR-API-KEY" https://api.thecatapi.com/v1/images/KWdLHmOqc
+
+3.images 
+curl -H "x-api-key: YOUR-API-KEY" "https://api.thecatapi.com/v1/images/search?limit=2" 
+
+Get Image Labels
+Retrieve the AI-generated labels (breeds, categories) for one of your uploaded images.
+curl -H "x-api-key: YOUR-API-KEY" https://api.thecatapi.com/v1/images/IMAGE_ID/labels
+
+4. facts
+curl --location 'https://api.thecatapi.com/v1/facts?limit=1' \
+--header 'x-api-key: YOUR-API-KEY' 
