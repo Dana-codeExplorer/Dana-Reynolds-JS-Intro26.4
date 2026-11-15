@@ -31,5 +31,5 @@ Retrieve the AI-generated labels (breeds, categories) for one of your uploaded i
 curl -H "x-api-key: YOUR-API-KEY" https://api.thecatapi.com/v1/images/IMAGE_ID/labels
 
 4. facts
-curl --location 'https://api.thecatapi.com/v1/facts?limit=1' \
+curl --location 'https://api.thecatapi.com/v1/facts?limit=1' 
 --header 'x-api-key: YOUR-API-KEY' 
