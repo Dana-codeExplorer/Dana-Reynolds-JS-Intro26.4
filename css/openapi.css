@@ -5,11 +5,12 @@
 }
 
 .cat-body {
+  margin: 0;
   color: black;
-  background-color: lightblue; 
+  background-color: lightblue;
 }
-.cat-button{
-  padding: .75em;
+.cat-button {
+  padding: 0.75em;
   background-color: lightskyblue;
   border: 2px solid white;
   border-radius: 5px;
@@ -21,7 +22,6 @@
 }
 .cat-navbar {
   display: flex;
-  background-color: transparent;
   color: white;
   border: 1px solid white;
   border-radius: 5px;
@@ -47,16 +47,17 @@
 .cat-navItem a {
   color: black;
   text-decoration: none;
-  
 }
+
 #cat-breeds {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  border: 2px solid white;
 }
-.cat-origin{
+.cat-origin {
   color: navy;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 }
 div {
@@ -74,11 +75,22 @@ img {
   display: block;
   margin-top: 5px;
 }
-.resultCatContainer{
+/* cat search */
+#search-cat-form {
+  border: 2px solid white;
+}
+#search-cat-form input {
+  border: 2px solid white;
+}
+#search-cat-input {
+  color: rgb(3, 3, 70);
+  font-weight: 900;
+}
+#results-cat-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: ;
+  justify-content: space-between;
 }
 .resultCatContainer.cat-image {
   height: 200px;
