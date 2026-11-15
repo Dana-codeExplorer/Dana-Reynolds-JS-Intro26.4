@@ -12,28 +12,43 @@
     <nav class="cat-navbar">
       <ul class="cat-navList">
         <li class="cat-navItem"><a href="./index.html">Home</a></li>
-        <li class="cat-navItem"><a href="./openapi.html">Cat API</a></li>
+        <li class="cat-navItem"><a href="#cat-breeds-section">Cat API</a></li>
+        <li class="cat-navItem"><a href="#search-cat-section">Search Cats</a></li>
       </ul>
     </nav>
 
     <!-- Cat Breeds Section ***** -->
-    <h2>Cat Breeds</h2>
-    <button id="fetch-cat-breeds" class="cat-button">Fetch Cats Breeds</button>
-    <div id="cat-breeds"></div>
-  
+    <section id="cat-breeds-section">
+      <h2>Cat Breeds</h2>
+      <button id="fetch-cat-breeds" class="cat-button">
+        Fetch Cats Breeds
+      </button>
+      <button type="button" id="clear-breeds-btn" class="cat-button">
+        Clear Results
+      </button>
+      <div id="cat-breeds"></div>
+    </section>
+
     <!-- Search Form Section ***** -->
+    <section id="search-cat-section">
     <h2>Search Cats</h2>
     <form id="search-cat-form">
       <button type="submit" class="cat-button">Search</button>
+      <button type="button" id="clear-cats-btn" class="cat-button">
+        Clear Results
+      </button>
+      <br />
       <label for="search-cat-input">Search for a cats by breed:</label>
       <input type="text" id="search-cat-input" placeholder="Enter cat breed" />
     </form>
+    </section>
+    
 
     <div id="results-cat-container">
       <h3>Search Results</h3>
-      <p id="search-cat-results"> </p>
+      <p id="search-cat-results"></p>
     </div>
-    
+
     <script src="js/openapi.js"></script>
   </body>
 </html>

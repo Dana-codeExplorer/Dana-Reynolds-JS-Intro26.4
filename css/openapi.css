@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .cat-body {
   color: black;
-  background-color: lightblue;
+  background-color: lightblue; 
 }
 .cat-button{
   padding: .75em;
@@ -23,7 +29,6 @@
 .cat-navList {
   justify-content: center;
   list-style: none;
-  
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -39,11 +44,20 @@
   flex-wrap: wrap;
   font-size: 1.2rem;
 }
-#cat-breeds {
+.cat-navItem a {
+  color: black;
+  text-decoration: none;
   
+}
+#cat-breeds {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+.cat-origin{
+  color: navy;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
 }
 div {
   border: 3px solid white;
@@ -60,6 +74,18 @@ img {
   display: block;
   margin-top: 5px;
 }
+.resultCatContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: ;
+}
+.resultCatContainer.cat-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
 #search-cat-results {
   color: black;
 }
