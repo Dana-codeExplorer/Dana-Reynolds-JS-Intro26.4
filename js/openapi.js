@@ -136,4 +136,8 @@ const clearBreedsBtn = document.querySelector('#clear-cats-btn');
 clearBreedsBtn.addEventListener('click', () => {
   searchResultsContainer.innerHTML = '';
   searchInput.value = '';
-});
+})
+
+
+
+a

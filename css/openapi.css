@@ -78,8 +78,16 @@ img {
   margin-top: 5px;
 }
 /* cat search */
+.searchResultsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 #search-cat-form {
-  border: 3px solid white;
+  border: 5px solid white;
   border-radius: 5px;
 }
 #search-cat-form input {
@@ -100,9 +108,15 @@ img {
   justify-content: space-between;
 }
 .imageContainer .cat-image {
-  height: 200px;
-  width: 200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 #search-cat-results {

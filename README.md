@@ -20,7 +20,7 @@
   #### a.In the inputs type in your name, your E-mail and the message you would like to leave
   #### b.click submit
  #### Section seven is where you and I can see the messages that have been left. 
-
+ 
 ### The API page has an App that I made from the Cat API made by "That API Company" whose founder is Aden Forshaw.
 
 #### Instructions on Cat API page:
@@ -28,7 +28,7 @@
 #### 1. The user can push the "Fetch Cat Breeds" button to see all the cat breeds.  The cat breeds include the cat's breed, the cats origin and an image.
 #### When the user is finished they can push the "Clear Results" button to clear the screen.
 #### 2. The user could also search for a specific breed. Type the breed you want to see in the input field then click the "Search" button to see a breed description and three images of cats belonging to that breed. When the user is finished they can push the "Clear Results" button to clear the screen.
-
+#### 3. 
 ## Installation using terminal
 ```bash
 git clone https://github.com/Dana-codeExplorer/Dana-Reynolds-JS-Intro26.4.git
