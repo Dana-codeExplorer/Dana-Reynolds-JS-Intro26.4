@@ -2,43 +2,46 @@
 ## Portfolio Project for Intro to Programming Course with Code the Dream
 ## Dana  A. Reynolds
 
-## This is my Portfolio which is a collection of software projects, code samples, and technical achievements designed to prove your programming skills and a App I made from a Cat API. 
+## My Portfolio
 
-### To view the App from VsCode you can click the "Go Live" to see the App in the Chrome Browser.
-### From outside Browser use: https://github.com/Dana-codeExplorer/Dana-Reynolds-JS-Intro26.4.git to get to the GitHub Repository.
-### Once inside the App, You will see my Name and directly below it a navigation bar that will take you to the different sections.
-### Just click on the section you want to go to and it will move you there.
+This is my portfolio, which is a collection of software projects, code samples, and technical achievements designed to demonstrate my programming skills, along with an app I built using The Cat API.
 
-### The home page header shows my image when you hover over the div containing the image.
- #### In section one, I briefly introduce myself. 
- #### Section two is my work and educational experience. 
- #### Section three contains clickable links to my E-mail, LinkedIn and both of my GitHub Accounts.
- #### Section four is a list of the skills I have.
- #### Section five is a list of repositories in the newer GitHub Account. *
- #### Section six is where you can leave me a message.
-  #### Instructions:   
-  #### a.In the inputs type in your name, your E-mail and the message you would like to leave
-  #### b.click submit
- #### Section seven is where you and I can see the messages that have been left. 
- 
-### The API page has an App that I made from the Cat API made by "That API Company" whose founder is Aden Forshaw.
+### Getting Started
+To view the app from VS Code, click **"Go Live"** to open it in your Chrome browser.
 
-#### Instructions on Cat API page:
-#### There are two parts: 
-#### 1. The user can push the "Fetch Cat Breeds" button to see all the cat breeds.  The cat breeds include the cat's breed, the cats origin and an image.
-#### When the user is finished they can push the "Clear Results" button to clear the screen.
-#### 2. The user could also search for a specific breed. Type the breed you want to see in the input field then click the "Search" button to see a breed description and three images of cats belonging to that breed. When the user is finished they can push the "Clear Results" button to clear the screen.
-#### 3. 
-## Installation using terminal
+**GitHub Repository:** https://github.com/Dana-codeExplorer/Dana-Reynolds-JS-Intro26.4.git
+
+### Navigation & Portfolio Sections
+Once inside the app, you will see my name with a navigation bar directly below it. Simply click on any section in the navigation bar to jump straight to it. The home page header also reveals my photo when you hover over the image container.
+
+* **Section 1 (About Me):** A brief introduction about myself.
+* **Section 2 (Experience):** My work and educational background.
+* **Section 3 (Connect):** Clickable links to my email, LinkedIn, and both of my GitHub accounts.
+* **Section 4 (Skills):** A list of my technical skills.
+* **Section 5 (Projects):** A list of repositories from my current GitHub account.
+* **Section 6 (Leave a Message):** A contact form where you can leave me a note. 
+  * *Instructions:* Type your name, email, and message into the input fields, then click **Submit**.
+* **Section 7 (Messages):** A display board where you and I can view the messages that have been left.
+
+### The Cat API App
+The API page features an app I built using [The Cat API](https://thecatapi.com/en) (created by "That API Company," founded by Aden Forshaw).
+
+#### How to Use the Cat API Page
+There are two main features on this page:
+
+1. **Browse All Breeds:** Click the **"Fetch Cat Breeds"** button to view a list of all cat breeds, including each cat's breed name, origin, and an image. When you are finished, click **"Clear Results"** to reset the screen.
+2. **Search by Breed:** Type a specific breed into the input field and click **"Search"** to view a description of the breed along with three photos. When you are finished, click **"Clear Results"** to reset the screen.
+
+### Installation (Using Terminal)
 ```bash
 git clone https://github.com/Dana-codeExplorer/Dana-Reynolds-JS-Intro26.4.git
-git install
 npm run dev
 ```
-## Usage: (No License) This App is open source and anything you find in it can be freely used.
 
-##### *disclaimer about GitHub Account: Some of these repositories are Apps, some are clones, and some are just where I store coding snippets or information. You can view the 138 repositories I have in my older Account("Danareynolds-coding"), but I do not have access to the email connected to this account, so I will not be using it in the future.
+### Usage
+No License
 
+> ***Disclaimer about my GitHub Accounts:** Some of these repositories are full apps, some are clones, and others are where I store coding snippets or notes. You can still view the 138 repositories on my older account (`Danareynolds-coding`), though I no longer have access to the email connected to it and will not be using it in the future.
 
 
 
