@@ -53,15 +53,19 @@ const searchCatForm = document.querySelector('#search-cat-form'); //form
 const searchInput = document.querySelector('#search-cat-input'); //input
 const searchResultsContainer = document.querySelector('#results-cat-container'); //div -results container
 const searchResults = document.querySelector('#search-cat-results'); //div -results container
+
 searchCatForm.addEventListener('submit', async (event) => {
   event.preventDefault();
   const userQuery = searchInput.value.trim();
+
   if (!userQuery) {
     searchResultsContainer.innerHTML = '<p>Please enter a cat breed.</p>';
     return;
   }
+  searchResultsContainer.innerHTML = '';
   searchResults.innerHTML = 'Searching...';
   searchResultsContainer.appendChild(searchResults);
+
   try {
     const url = `https://api.thecatapi.com/v1/breeds/search?q=${userQuery}`;
     const breedResponse = await fetch(url, {
@@ -72,7 +76,9 @@ searchCatForm.addEventListener('submit', async (event) => {
     if (!breedResponse.ok) {
       throw new Error(`Failed to search cats(Status: ${breedResponse.status})`);
     }
+
     const breeds = await breedResponse.json();
+
     if (breeds.length === 0) {
       searchResultsContainer.innerHTML = `<p>No cats found matching "${userQuery}"</p>`;
       return;
@@ -92,23 +98,42 @@ searchCatForm.addEventListener('submit', async (event) => {
       );
     }
     const images = await imageResponse.json();
-    searchResultsContainer.innerHTML = '';
+
+    const breedInformationContainer = document.createElement('div');
+    breedInformationContainer.setAttribute(
+      'class',
+      'breedInformationContainer',
+    );
+
+    const breedNameElement = document.createElement('h3');
+    breedNameElement.textContent = breeds[0].name;
+    breedInformationContainer.appendChild(breedNameElement);
+
+    const breedDescriptionElement = document.createElement('p');
+    breedDescriptionElement.textContent = breeds[0].description;
+    breedInformationContainer.appendChild(breedDescriptionElement);
+
+    searchResultsContainer.appendChild(breedInformationContainer);
+
+    const imageContainer = document.createElement('div');
+    imageContainer.setAttribute('class', 'imageContainer');
+
     images.forEach((image) => {
       const imgElement = document.createElement('img');
       imgElement.src = image.url;
       imgElement.alt = breeds[0].name;
       imgElement.width = 200;
       imgElement.setAttribute('class', 'cat-image');
-      searchResultsContainer.appendChild(imgElement);
+      imageContainer.appendChild(imgElement);
     });
+    searchResultsContainer.appendChild(imageContainer);
   } catch (error) {
     console.error('Error search fetch:', error);
     searchResultsContainer.innerHTML = `<p> Failed to fetch cat images: ${error.message}</p>`;
   }
-  
-  });
+});
 const clearBreedsBtn = document.querySelector('#clear-cats-btn');
-    clearBreedsBtn.addEventListener('click', () => {
-    searchResultsContainer.innerHTML = '';
-    searchInput.value = '';
-  });
+clearBreedsBtn.addEventListener('click', () => {
+  searchResultsContainer.innerHTML = '';
+  searchInput.value = '';
+});

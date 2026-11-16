@@ -53,7 +53,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  border: 2px solid white;
+  border: 4px solid white;
+  border-radius: 5px;
+
 }
 .cat-origin {
   color: navy;
@@ -77,22 +79,27 @@ img {
 }
 /* cat search */
 #search-cat-form {
-  border: 2px solid white;
+  border: 3px solid white;
+  border-radius: 5px;
 }
 #search-cat-form input {
-  border: 2px solid white;
-}
-#search-cat-input {
+  border: 3px solid white;
   color: rgb(3, 3, 70);
   font-weight: 900;
 }
-#results-cat-container {
+.breedInformationContainer {
+  margin: 10px;
+}
+.breedInformationContainer h3{
+  margin: 10px;
+}
+.imageContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-between;
 }
-.resultCatContainer.cat-image {
+.imageContainer .cat-image {
   height: 200px;
   width: 200px;
   object-fit: cover;
