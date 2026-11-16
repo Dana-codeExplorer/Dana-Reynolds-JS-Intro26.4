@@ -1,11 +1,9 @@
 const api_key =
   'live_CJbvF8faSwrg8I7EMl0j2VfukMaE3mpjRo66nJYWc3I6NIKS5tD8KoLiwJtn9mNZ';
 
-const base_url = 'https://api.thecatapi.com/v1/breeds';
-
-async function getCatsBreeds() {
+async function getCatBreeds() {
   try {
-    const url = `${base_url}`;
+    const url = 'https://api.thecatapi.com/v1/breeds';
     const response = await fetch(url, {
       headers: {
         'x-api-key': api_key,
@@ -23,10 +21,10 @@ async function getCatsBreeds() {
       const nameElement = document.createElement('h3');
       nameElement.textContent = breed.name;
       const originElement = document.createElement('p');
+      breedElement.appendChild(nameElement);
       originElement.textContent = breed.origin;
       originElement.setAttribute('class', 'cat-origin');
       breedElement.appendChild(originElement);
-      breedElement.appendChild(nameElement);
       if (breed.image && breed.image.url) {
         const imgElement = document.createElement('img');
         imgElement.src = breed.image.url;
@@ -45,32 +43,26 @@ const breedsContainer = document.querySelector('#cat-breeds');
 clearBtn.addEventListener('click', () => {
   breedsContainer.innerHTML = '';
 });
-
-
-
 document
   .querySelector('#fetch-cat-breeds')
-  .addEventListener('click', getCatsBreeds);
+  .addEventListener('click', getCatBreeds);
 
 // Search Cats by id Section
-//First-get all elements
+
 const searchCatForm = document.querySelector('#search-cat-form'); //form
 const searchInput = document.querySelector('#search-cat-input'); //input
 const searchResultsContainer = document.querySelector('#results-cat-container'); //div -results container
-const searchResults = document.querySelector('#search-cat-results'); //p -results
-//Second add event listener and delay signal
+const searchResults = document.querySelector('#search-cat-results'); //div -results container
 searchCatForm.addEventListener('submit', async (event) => {
   event.preventDefault();
-  // if no text in input when button pushed
   const userQuery = searchInput.value.trim();
   if (!userQuery) {
     searchResultsContainer.innerHTML = '<p>Please enter a cat breed.</p>';
     return;
   }
-  // show user that button has been pushed
-  searchResultsContainer.innerHTML = 'Searching...';
+  searchResults.innerHTML = 'Searching...';
+  searchResultsContainer.appendChild(searchResults);
   try {
-    // Third Search for cat breeds based on user query
     const url = `https://api.thecatapi.com/v1/breeds/search?q=${userQuery}`;
     const breedResponse = await fetch(url, {
       headers: {
@@ -86,10 +78,6 @@ searchCatForm.addEventListener('submit', async (event) => {
       return;
     }
     const breedId = breeds[0].id;
-
-    console.log(breedId);
-    // API example "https://api.thecatapi.com/v1/images/search?limit=2"
-    // Fourth Fetch cat images based on breed id
     const imageResponse = await fetch(
       `https://api.thecatapi.com/v1/images/search?breed_ids=${breedId}&limit=3`,
       {
@@ -115,11 +103,12 @@ searchCatForm.addEventListener('submit', async (event) => {
     });
   } catch (error) {
     console.error('Error search fetch:', error);
-    searchResultsContainer.innerHTML = `<p>Error:${error.message}</p>`;
+    searchResultsContainer.innerHTML = `<p> Failed to fetch cat images: ${error.message}</p>`;
   }
-  const clearBreedsBtn = document.querySelector('#clear-cats-btn');
+  
+  });
+const clearBreedsBtn = document.querySelector('#clear-cats-btn');
     clearBreedsBtn.addEventListener('click', () => {
     searchResultsContainer.innerHTML = '';
     searchInput.value = '';
   });
-});
