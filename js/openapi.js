@@ -1,3 +1,4 @@
+//import {api_key} from './config.js';
 const api_key =
   'live_CJbvF8faSwrg8I7EMl0j2VfukMaE3mpjRo66nJYWc3I6NIKS5tD8KoLiwJtn9mNZ';
 
@@ -50,10 +51,10 @@ document
 
 // Search Cats by id Section
 
-const searchCatForm = document.querySelector('#search-cat-form'); 
-const searchInput = document.querySelector('#search-cat-input'); 
-const searchResultsContainer = document.querySelector('#results-cat-container'); 
-const searchResults = document.querySelector('#search-cat-results'); 
+const searchCatForm = document.querySelector('#search-cat-form');
+const searchInput = document.querySelector('#search-cat-input');
+const searchResultsContainer = document.querySelector('#results-cat-container');
+const searchResults = document.querySelector('#search-cat-results');
 
 searchCatForm.addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -139,7 +140,4 @@ const clearBreedsBtn = document.querySelector('#clear-cats-btn');
 clearBreedsBtn.addEventListener('click', () => {
   searchResultsContainer.innerHTML = '';
   searchInput.value = '';
-})
-
-
-
+});

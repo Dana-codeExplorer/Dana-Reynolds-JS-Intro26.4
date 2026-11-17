@@ -21,8 +21,12 @@
   border: 1px solid white;
 }
 .cat-navbar {
+  position:sticky;
+  top: 0;
+  Z-index: 1000;
+  background-color: lightblue;
   display: flex;
-  color: white;
+  color: rgb(1, 1, 65);
   border: 1px solid white;
   border-radius: 5px;
 }
