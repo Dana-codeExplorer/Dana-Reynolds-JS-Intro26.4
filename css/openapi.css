@@ -62,13 +62,14 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
 }
-div {
+.cat-breed{
   border: 3px solid white;
   border-radius: 5px;
   gap: 2em;
   padding: 1em;
   align-items: center;
-}
+  margin: 1em;
+} 
 h3 {
   color: black;
   text-align: center;
@@ -78,14 +79,7 @@ img {
   margin-top: 5px;
 }
 /* cat search */
-.searchResultsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
+
 #search-cat-form {
   border: 5px solid white;
   border-radius: 5px;
@@ -94,6 +88,15 @@ img {
   border: 3px solid white;
   color: rgb(3, 3, 70);
   font-weight: 900;
+}
+#results-cat-container {
+  border: 5px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 .breedInformationContainer {
   margin: 10px;

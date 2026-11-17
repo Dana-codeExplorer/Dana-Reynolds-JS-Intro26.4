@@ -18,6 +18,7 @@ async function getCatBreeds() {
     breedsContainer.innerHTML = '';
     breeds.forEach((breed) => {
       const breedElement = document.createElement('div');
+      breedElement.setAttribute('class', 'cat-breed');
       const nameElement = document.createElement('h3');
       nameElement.textContent = breed.name;
       const originElement = document.createElement('p');
@@ -49,10 +50,10 @@ document
 
 // Search Cats by id Section
 
-const searchCatForm = document.querySelector('#search-cat-form'); //form
-const searchInput = document.querySelector('#search-cat-input'); //input
-const searchResultsContainer = document.querySelector('#results-cat-container'); //div -results container
-const searchResults = document.querySelector('#search-cat-results'); //div -results container
+const searchCatForm = document.querySelector('#search-cat-form'); 
+const searchInput = document.querySelector('#search-cat-input'); 
+const searchResultsContainer = document.querySelector('#results-cat-container'); 
+const searchResults = document.querySelector('#search-cat-results'); 
 
 searchCatForm.addEventListener('submit', async (event) => {
   event.preventDefault();
@@ -99,6 +100,8 @@ searchCatForm.addEventListener('submit', async (event) => {
     }
     const images = await imageResponse.json();
 
+    searchResults.remove();
+
     const breedInformationContainer = document.createElement('div');
     breedInformationContainer.setAttribute(
       'class',
@@ -140,4 +143,3 @@ clearBreedsBtn.addEventListener('click', () => {
 
 
 
-a
