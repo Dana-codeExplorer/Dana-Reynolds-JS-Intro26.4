@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/openapi.css" />
+    <title>OpenAPI</title>
+  </head>
+  <body class="cat-body">
+    <h1 class="cat-h1">Cat API</h1>
+    <nav class="cat-navbar">
+      <ul class="cat-navList">
+        <li class="cat-navItem"><a href="./index.html">Home</a></li>
+        <li class="cat-navItem"><a href="#cat-breeds-section">Cat Breeds</a></li>
+        <li class="cat-navItem"><a href="#search-cat-section">Search Cat Breeds</a></li>
+      </ul>
+    </nav>
+
+    <!-- Cat Breeds Section ***** -->
+    <section id="cat-breeds-section">
+      <h2>Cat Breeds</h2>
+      <button id="fetch-cat-breeds" class="cat-button">
+        Fetch Cat Breeds
+      </button>
+      <button type="button" id="clear-breeds-btn" class="cat-button">
+        Clear Results
+      </button>
+      <div id="cat-breeds"></div>
+    </section>
+
+    <!-- Search Form Section ***** -->
+    <section id="search-cat-section">
+    <h2>Search Cat Breeds</h2>
+    <form id="search-cat-form">
+      <button type="submit" class="cat-button">Search</button>
+      <button type="button" id="clear-cats-btn" class="cat-button">
+        Clear Results
+      </button>
+      <br />
+      <label for="search-cat-input">Search for a cats by breed:</label>
+      <input type="text" id="search-cat-input" placeholder="Enter cat breed" />
+    </form>
+    </section>
+
+    <section id="search-cat-results-section">
+      <div id="results-cat-container">
+        <h2>Search Results</h2>
+      <div id="search-cat-results"></div>
+      </div>
+    </section>
+     <script src="js/openapi.js"></script>
+    <!-- <script src=“openapi.js”></script> -->
+    <!-- <script type=“module” src=“openapi.js”></script> -->
+  </body>
+</html>
